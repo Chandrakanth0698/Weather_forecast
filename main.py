@@ -11,7 +11,7 @@ option = st.selectbox("Select data to view", ("Temperature", "Sky"))
 # get temperature/ sky data
 if place:
     try:
-        filtered_content = get_data(place, days)
+        filtered_content = get_data(place, days, API_key=st.secrets["API_key"])
         dates = [observation["dt_txt"] for observation in filtered_content]
         st.subheader(f"{option} for the next {days} days in {place} for every 3 hours.")
         if option == "Temperature":
