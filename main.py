@@ -3,7 +3,7 @@ import plotly.express as px
 from backend import get_data
 
 # Add title, text_input, slider, selection box
-st.title("Weather Forcast App")
+st.title("Weather Forecast App")
 place = st.text_input("Place: ")
 days = st.slider("Forecast Days", min_value=1, max_value=5, help="Select the number of days to forcast")
 option = st.selectbox("Select data to view", ("Temperature", "Sky"))
