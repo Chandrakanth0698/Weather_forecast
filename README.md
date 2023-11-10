@@ -1,1 +1,1 @@
-# This repo consists of streamlit app to forcest weather in a particular place
+# This repo consists of streamlit app to forecast weather in a particular place
